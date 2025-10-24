@@ -45,7 +45,7 @@ h1::after{
     position: absolute;
     bottom: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--primary-color), var(--fc8181));
+    background: linear-gradient(90deg, var(--primary-color), var(--weak-color));
     left: 50%;
     width: 50%;
     transform: translateX(-50%);
