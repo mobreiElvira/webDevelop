@@ -1,0 +1,19 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+
+knife4j:
+  enable: true
+  openapi:
+    title: 脑筋急转弯api文档
+    group:
+      default:
+        group-name: ai脑筋急转弯
+        api-rule: package
+        api-rule-resources:
+          - com.tfzhang.aichat.controller
+
+
+ai:
+  apiKey: 你的apiKey
+  

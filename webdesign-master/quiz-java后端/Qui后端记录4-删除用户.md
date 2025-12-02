@@ -58,7 +58,7 @@ public int existsByName(@Param("username") String username);
 
 ```java
     //接口：
-	public boolean deleteUserById(Long id)；
+	public boolean deleteUserById(Long id);
     public boolean deleteUserByName(String username);
 
 	//实现；

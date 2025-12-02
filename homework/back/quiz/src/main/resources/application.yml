@@ -1,10 +1,20 @@
 spring:
-#  application:
-#    name:quiz
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/myusers
     username: root
     password: 123
-#  server:
-#    port: 8080
+logging:
+  level:
+    org.mybatis: debug
+    java.sql: debug
+    java.sql.Statement: debug
+    java.sql.PreparedStatement: debug
+    java.sql.ResultSet: debug
+
+#mybatis:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

@@ -1,0 +1,10 @@
+spring:
+#  application:
+#    name:quiz
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myusers
+    username: root
+    password: 123
+#  server:
+#    port: 8080

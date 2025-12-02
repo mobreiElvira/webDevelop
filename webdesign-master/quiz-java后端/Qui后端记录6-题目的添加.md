@@ -92,7 +92,7 @@ public class Question {
 ```java
 @Mapper
 public interface QuestionMapper {
-    @Insert("INSERT INTO questions (question_text,answer1_text, answer1_correct,answer2_text, answer2_correct, answer3_text, answer3_correct,answer4_text, answer4_correct, isDelete, createTime, updateTime)" +
+    @Insert("INSERT INTO questions (questionText,answer1Text, answer1Correct,answer2Text, answer2Correct, answer3Text, answer3Correct,answer4Text, answer4Correct, isDelete, createTime, updateTime)" +
             "VALUES (#{questionText},#{answer1Text}, #{answer1Correct}, #{answer2Text}, #{answer2Correct},#{answer3Text}, #{answer3Correct},#{answer4Text}, #{answer4Correct}, #{isDelete},#{createTime},#{updateTime})")
     @Options(useGeneratedKeys = true, keyProperty = "id")
     int insertQuestion(Question question);
@@ -224,7 +224,7 @@ answer: b
 
 #### 3、题目的删除；
 
-- 根据id删除用户；
+- 根据id删除题目；
 - 主要采用逻辑删除的方式；
 
 参考删除用户的代码来实现。

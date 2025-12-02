@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-utensils"></i>Recipe Finder</h1>
+            <p>Find delicious recipe from the world</p>
+        </header>
+
+        <p class="api-link">Data from <a href="https://www.themealdb.com/api.php" target="_blank">The MealDB 🧑‍🍳</a></p>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for meals are keywords">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div id="error-container" class="hidden">
+            <p>No meals found. Try another input.</p>
+        </div>
+
+        <div class="result-heading hidden">
+            you search ...
+        </div>
+
+        <div id="meals" class="meals-container hidden">
+        <!--             
+            <div class="meal" data-meal-id="52777">
+                <img src="https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg" alt="Mediterranean Pasta Salad">
+                <div class="meal-info">
+                    <h3 class="meal-title">Mediterranean Pasta Salad</h3>
+                    <div class="meal-category">Seafood</div>
+                </div>
+            </div> 
+            <div class="meal" data-meal-id="52777">
+                <img src="https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg" alt="Mediterranean Pasta Salad">
+                <div class="meal-info">
+                    <h3 class="meal-title">Mediterranean Pasta Salad</h3>
+                    <div class="meal-category">Seafood</div>
+                </div>
+            </div> 
+            <div class="meal" data-meal-id="52777">
+                <img src="https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg" alt="Mediterranean Pasta Salad">
+                <div class="meal-info">
+                    <h3 class="meal-title">Mediterranean Pasta Salad</h3>
+                    <div class="meal-category">Seafood</div>
+                </div>
+            </div>
+        -->
+            
+        </div>
+        <div id="meal-detials" class="hidden">
+            
+            <button id="back-btn"><i class="fa-solid fa-arrow-left"></i>Back to recipies</button>
+            <div class="meal-details-content">
+                <!-- 
+                <img src="https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg" alt="Mediterranean Pasta Salad" class="meal-details-img">
+                <h2 class="meal-details-title">Mediterranean Pasta Salad</h2>
+                <div class="meal-details-category">
+                    <span>Seafood</span>
+                </div>
+                <div class="meal-details-instructions">
+                    <h3>Instructions</h3>
+                    <p>Bring a large saucepan of salted water to the boil
+                        Add the pasta, stir once and cook for about 10 minutes or as directed on the packet.Meanwhile, wash the tomatoes and cut into quarters. Slice the olives. Wash the basil.</p>
+                </div>
+                <div class="meal-details-ingredients">
+                    <h3>Ingredients</h3>
+                    <ul class="ingredients-list">  
+                        <li><i class="fas fa-check-circle"></i> 200 g mozzarella balls</li>
+                        <li><i class="fas fa-check-circle"></i> 250 g baby plum tomatoes</li>           
+                        <li><i class="fas fa-check-circle"></i> 1  bunch fresh basil</li>     
+                        <li><i class="fas fa-check-circle"></i> 350 g farfalle</li>       
+                        <li><i class="fas fa-check-circle"></i> 3  tablespoons extra virgin olive oil</li>          
+                        <li><i class="fas fa-check-circle"></i> 40 g Green Olives</li>          
+                        <li><i class="fas fa-check-circle"></i> 200 g tuna</li>            
+                        <li><i class="fas fa-check-circle"></i> to taste salt</li>            
+                        <li><i class="fas fa-check-circle"></i> to taste pepper</li>            
+                    </ul>
+                </div>
+                <a href="https://www.youtube.com/watch?v=e52IL8zYmaE" target="_blank" class="youtube-link">
+                    <i class="fab fa-youtube"></i> Watch Video
+                </a> 
+            -->
+
+            </div>
+        </div>
+    </div> 
+    <script src="script.js" class="js"></script>
+</body>
+</html>

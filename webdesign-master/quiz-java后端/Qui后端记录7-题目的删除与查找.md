@@ -36,7 +36,7 @@
 
 ```java
 //接口；
-public boolean delQuestion(Integer id)；
+public boolean delQuestion(Integer id);
     
 //实现；
 public boolean delQuestion(Integer id){
